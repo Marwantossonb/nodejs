@@ -7,6 +7,14 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/Marwantossonb/private_repo.git'
             }
         }
-   
+        stage('Build') {
+            steps {
+                sh '''
+                    # Your Bash script commands here
+                         mkdir newnewnew
+                    # Additional commands...
+                '''
+            }
+        }
     }
 }
