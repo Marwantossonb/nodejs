@@ -5,10 +5,7 @@ pipeline {
           steps {
                 // Checkout the desired branch
                 git branch: 'develop', url: 'https://github.com/Marwantossonb/private_repo.git'
-            }
-        }
-     stage('sh') {
-          steps {
+                
                 sh '''
                     # Your Bash script commands here
                          mkdir newnewnew
@@ -16,6 +13,8 @@ pipeline {
                 '''
             }
         }
-    }
-    }
+
+                
+            }
 }
+        
